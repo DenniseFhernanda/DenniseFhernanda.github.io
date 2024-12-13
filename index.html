@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+        }
+        .btn-turquesa {
+            background-color: #30D5C8; /* Color verde turquesa */
+            color: white;
+        }
+        .container {
+            margin-top: 50px; /* Margen superior */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Formulario de Registro</h1>
+        <form action="guardar_datos.php" method="POST">
+            <div class="form-group">
+                <label for="codigo">Código</label>
+                <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ingrese el código" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="number" step="0.01" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaAlta">Fecha de Alta</label>
+                <input type="date" class="form-control" id="fechaAlta" name="fecha_alta" required>
+            </div>
+            <button type="submit" class="btn btn-turquesa">Continuar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
